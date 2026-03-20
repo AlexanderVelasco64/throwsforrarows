@@ -12,9 +12,12 @@ body { margin: 0; font-family: 'Arial Black', sans-serif; background: var(--dark
 /* Banner & Hero Section */
 .hero { 
     position: relative;
-    height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.jpg') center/cover;
-    display: flex; align-items: center; justify-content: center; text-align: center;
+    height: 80vh;
+    /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.jpg') center/cover; */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
     border-bottom: 8px solid var(--accent);
 }
 .hero-content h1 { font-size: clamp(2rem, 8vw, 4rem); text-transform: uppercase; font-style: italic; margin: 0; }
@@ -36,15 +39,6 @@ input, textarea {
     font-weight: bold; cursor: pointer; text-transform: uppercase; display: inline-block;
 }
 .container { max-width: 900px; margin: auto; padding: 20px; }
-
-.hero {
-    position: relative;
-    height: 80vh; /* Increased height for impact */
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .back-video {
     position: absolute;
