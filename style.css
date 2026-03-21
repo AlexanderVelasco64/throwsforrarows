@@ -37,6 +37,7 @@ h1, h2, h3 { text-transform: uppercase; font-style: italic; }
     text-align: center;
     border-bottom: 8px solid var(--accent);
     overflow: hidden;
+    margin-top: 60px;
 }
 
 .back-video {
@@ -85,3 +86,42 @@ input, textarea {
     width: 100%; padding: 12px; margin: 10px 0; border: none; 
     background: #333; color: #fff; font-family: sans-serif; box-sizing: border-box; 
 }
+/* Sticky Navigation */
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(17, 17, 17, 0.95); /* Slight transparency */
+    border-bottom: 2px solid var(--accent);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; font-style: italic; }
+.logo span { color: var(--accent); }
+
+.nav-links { list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; }
+.nav-links a { 
+    text-decoration: none; 
+    color: var(--light); 
+    text-transform: uppercase; 
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+.nav-links a:hover { color: var(--accent); }
+
+.nav-btn { padding: 8px 15px; font-size: 0.8rem; }
+
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* Hide links on mobile for simplicity */
+}
+
